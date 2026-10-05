@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #242424;
+    color: #eeeeee;
+    line-height: 1.6;
+}
+
+/* Navigation */
+
+header {
+    background: #303030;
+    border-bottom: 1px solid #454545;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    height: 70px;
+    padding: 0 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 22px;
+    color: #b9c7ce;
+    font-weight: 600;
+}
+
+.nav_links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav_links a {
+    color: #c3c3c3;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.nav_links a:hover {
+    color: #ffffff;
+}
+
+/* Home */
+
+.home {
+    min-height: 620px;
+    padding: 70px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home_cont {
+    max-width: 700px;
+}
+
+.small_txt {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #929292;
+    margin-bottom: 15px;
+}
+
+.home h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.home_cont > p:not(.small_txt) {
+    font-size: 17px;
+    color: #c7c7c7;
+    margin-bottom: 28px;
+}
+
+.work_btn {
+    display: inline-block;
+    padding: 11px 25px;
+    background: #788993;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: background 0.2s ease;
+}
+
+.work_btn:hover {
+    background: #657780;
+}
+
+/* About */
+
+.abt {
+    min-height: 620px;
+    padding: 80px 9%;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+    gap: 65px;
+    background: #282828;
+}
+
+.abt_img {
+    display: flex;
+    justify-content: center;
+}
+
+.photo_box {
+    width: 340px;
+    height: 420px;
+    background: #eeeae3;
+    color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d2d0cb;
+    box-shadow: 8px 8px 0 #343434;
+}
+
+.photo_box p {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.photo_box span {
+    color: #777777;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.abt_txt {
+    max-width: 600px;
+}
+
+.abt_txt h2 {
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+.abt_txt p:not(.small_txt) {
+    color: #c8c8c8;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+/* Skills */
+
+.skl {
+    padding: 80px 20px 85px;
+    text-align: center;
+}
+
+.skl h2,
+.pjt h2,
+.intr h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+.skl_list {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    min-width: 100px;
+    padding: 11px 20px;
+    border: 1px solid #657780;
+    color: #dddddd;
+    background: #292929;
+    transition: 0.2s ease;
+}
+
+.skill:hover {
+    background: #788993;
+    color: white;
+}
+
+/* Projects */
+
+.pjt {
+    padding: 80px 9%;
+    background: #292929;
+    text-align: center;
+}
+
+.pjt_list {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pjt_card {
+    background: #eeeeee;
+    color: #303030;
+    text-align: left;
+    padding: 26px;
+    min-height: 235px;
+    border: 1px solid #d1d1d1;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease;
+}
+
+.pjt_card:hover {
+    transform: translateY(-3px);
+}
+
+.pjt_card h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.pjt_card p {
+    color: #666666;
+    font-size: 14px;
+}
+
+.pjt_card span {
+    margin-top: auto;
+    color: #687b85;
+    font-size: 12px;
+}
+
+/* Interests */
+
+.intr {
+    padding: 80px 9%;
+    text-align: center;
+}
+
+.intr_list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 50px;
+    text-align: left;
+}
+
+.intr_item {
+    padding: 17px 5px;
+}
+
+.intr_item h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.intr_item p {
+    font-size: 14px;
+    color: #a9a9a9;
+}
+
+/* Contact */
+
+.cont {
+    padding: 95px 20px;
+    text-align: center;
+    background: #292929;
+}
+
+.cont h2 {
+    font-size: 44px;
+    margin-bottom: 17px;
+}
+
+.cont > p:not(.small_txt) {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #bdbdbd;
+    font-size: 15px;
+}
+
+.cont_links {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.cont_links a {
+    padding: 10px 22px;
+    border: 1px solid #687a84;
+    color: #d5d5d5;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.cont_links a:hover {
+    background: #788993;
+    color: white;
+}
+
+/* Smaller screens */
+
+@media (max-width: 800px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .nav_links {
+        gap: 14px;
+    }
+
+    .nav_links a {
+        font-size: 13px;
+    }
+
+    .home h2 {
+        font-size: 42px;
+    }
+
+    .abt {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 70px 25px;
+    }
+
+    .abt_txt {
+        text-align: center;
+        margin: auto;
+    }
+
+    .photo_box {
+        width: 300px;
+        height: 380px;
+    }
+
+    .pjt_list {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+
+    .pjt_card {
+        min-height: 210px;
+    }
+}
+
+/* Phones */
+
+@media (max-width: 500px) {
+    nav {
+        height: auto;
+        padding: 16px 15px;
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .nav_links {
+        gap: 10px;
+    }
+
+    .nav_links a {
+        font-size: 12px;
+    }
+
+    .home {
+        min-height: 540px;
+    }
+
+    .home h2 {
+        font-size: 36px;
+    }
+
+    .home_cont > p:not(.small_txt) {
+        font-size: 15px;
+    }
+
+    .abt_txt h2 {
+        font-size: 30px;
+    }
+
+    .intr_list {
+        grid-template-columns: 1fr;
+    }
+
+    .cont h2 {
+        font-size: 36px;
+    }
+}
