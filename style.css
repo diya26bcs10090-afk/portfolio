@@ -11,125 +11,114 @@ html {
 body {
     font-family: Arial, sans-serif;
     background: #292929;
-    color: #eeeeee;
+    color: #eee;
     line-height: 1.6;
 }
 
 header {
     background: #353535;
-    border-bottom: 1px solid #414141;
+    border-bottom: 1px solid #444;
     position: sticky;
     top: 0;
     z-index: 10;
 }
 
 .nav {
-    height: 84px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 42px;
+    padding: 0 40px;
 }
 
 .nav h1 {
-    font-size: 25px;
-    color: #eeeeee;
+    font-size: 24px;
 }
 
 .nav_links {
     display: flex;
-    gap: 28px;
+    gap: 25px;
 }
 
 .nav_links a {
-    color: #dddddd;
+    color: #ddd;
     text-decoration: none;
-    font-size: 16px;
-    transition: 0.2s;
+    font-size: 15px;
 }
 
 .nav_links a:hover {
-    color: #bbbbbb;
+    color: white;
 }
 
 .home {
-    min-height: calc(100vh - 84px);
+    min-height: calc(100vh - 75px);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 80px 25px;
-    background: #292929;
+    padding: 50px 20px;
 }
 
 .home_text {
-    max-width: 760px;
+    max-width: 700px;
 }
 
 .small_text {
-    font-size: 13px;
-    letter-spacing: 4px;
-    color: #999999;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #999;
     margin-bottom: 15px;
 }
 
 .home h2 {
-    font-size: 64px;
-    line-height: 1.1;
-    margin-bottom: 22px;
-    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 20px;
 }
 
 .home_intro {
-    font-size: 19px;
-    color: #bdbdbd;
-    max-width: 650px;
-    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 30px;
 }
 
 .btn {
     display: inline-block;
-    padding: 13px 27px;
-    background: #eeeeee;
+    padding: 12px 25px;
+    background: #eee;
     color: #292929;
     text-decoration: none;
-    font-weight: bold;
-    border: 1px solid #eeeeee;
-    transition: 0.25s;
+    border: 1px solid #eee;
 }
 
 .btn:hover {
     background: #292929;
-    color: #eeeeee;
+    color: #eee;
 }
 
 .sec {
-    padding: 100px max(35px, calc((100% - 1080px)/2));
+    padding: 90px max(30px, calc((100% - 1050px) / 2));
 }
 
 .tag {
     font-size: 12px;
-    letter-spacing: 3px;
-    color: #999999;
-    margin-bottom: 28px;
+    letter-spacing: 2px;
+    color: #999;
+    margin-bottom: 25px;
 }
 
 .abt {
-    min-height: 680px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 70px;
     align-items: center;
-    background: #2d2d2d;
+    background: #2e2e2e;
 }
 
 .abt_img {
     width: 100%;
-    max-width: 500px;
-    height: 570px;
+    height: 550px;
     overflow: hidden;
     background: #3a3a3a;
-    border: 1px solid #555555;
 }
 
 .abt_img img {
@@ -137,55 +126,49 @@ header {
     height: 100%;
     display: block;
     object-fit: cover;
-    object-position: center center;
 }
 
 .abt_text {
-    max-width: 520px;
+    max-width: 500px;
 }
 
 .abt_text h2 {
-    font-size: 42px;
-    margin-bottom: 30px;
+    font-size: 40px;
+    margin-bottom: 25px;
 }
 
 .abt_text p:not(.tag) {
-    color: #bdbdbd;
-    font-size: 17px;
-    margin-bottom: 22px;
+    color: #bbb;
+    font-size: 16px;
+    margin-bottom: 18px;
 }
 
 .skl {
     text-align: center;
-    background: #292929;
 }
 
 .skl h2 {
-    font-size: 42px;
-    margin-bottom: 45px;
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
 .skl_list {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .skl_list div {
-    min-width: 125px;
-    padding: 16px 25px;
-    border: 1px solid #666666;
-    color: #dddddd;
-    background: #2d2d2d;
-    transition: 0.25s;
+    padding: 14px 25px;
+    border: 1px solid #666;
+    background: #303030;
+    color: #ddd;
 }
 
 .skl_list div:hover {
-    background: #eeeeee;
+    background: #eee;
     color: #292929;
-    border-color: #eeeeee;
-    transform: translateY(-3px);
 }
 
 .pjt_sec {
@@ -194,132 +177,105 @@ header {
 }
 
 .pjt_sec h2 {
-    font-size: 42px;
-    margin-bottom: 50px;
+    font-size: 40px;
+    margin-bottom: 45px;
 }
 
 .pjt_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 25px;
     text-align: left;
 }
 
 .pjt {
-    background: #eeeeee;
-    color: #333333;
-    padding: 34px;
-    min-height: 270px;
-    border: 1px solid #dddddd;
-    transition: 0.25s;
-}
-
-.pjt:nth-child(2) {
-    transform: translateY(10px);
-}
-
-.pjt:nth-child(3) {
-    transform: translateY(-5px);
-}
-
-.pjt:hover {
-    transform: translateY(-6px);
-}
-
-.pjt:nth-child(2):hover {
-    transform: translateY(4px);
+    background: #eee;
+    color: #333;
+    padding: 30px;
+    min-height: 250px;
 }
 
 .pjt h3 {
-    font-size: 23px;
-    margin-bottom: 22px;
+    font-size: 22px;
+    margin-bottom: 18px;
 }
 
 .pjt p {
-    color: #666666;
+    color: #666;
     font-size: 15px;
     margin-bottom: 25px;
 }
 
 .pjt span {
     font-size: 13px;
-    color: #777777;
-}
-
-.interest_sec {
-    background: #292929;
+    color: #777;
 }
 
 .interest_sec h2 {
-    font-size: 42px;
-    margin-bottom: 55px;
+    font-size: 40px;
+    margin-bottom: 45px;
 }
 
 .interest_list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
-    row-gap: 60px;
+    gap: 50px 70px;
 }
 
 .interest {
-    padding-bottom: 25px;
-    border-bottom: 1px solid #505050;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #4d4d4d;
 }
 
 .interest h3 {
-    font-size: 26px;
-    font-weight: 500;
-    margin-bottom: 15px;
+    font-size: 25px;
+    margin-bottom: 12px;
 }
 
 .interest p {
     color: #b5b5b5;
-    font-size: 16px;
-    margin-bottom: 14px;
+    font-size: 15px;
+    margin-bottom: 12px;
 }
 
 .contact {
     text-align: center;
     background: #303030;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .contact h2 {
-    font-size: 56px;
-    margin-bottom: 25px;
+    font-size: 50px;
+    margin-bottom: 20px;
 }
 
-.contact>p:not(.tag) {
-    color: #b5b5b5;
-    font-size: 17px;
-    max-width: 650px;
-    margin: 0 auto 40px;
+.contact > p:not(.tag) {
+    color: #bbb;
+    max-width: 600px;
+    margin: 0 auto 35px;
 }
 
 .contact_links {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .contact_links a {
-    color: #eeeeee;
+    color: #eee;
     text-decoration: none;
-    border: 1px solid #666666;
-    padding: 12px 24px;
-    transition: 0.25s;
+    border: 1px solid #666;
+    padding: 11px 22px;
 }
 
 .contact_links a:hover {
-    background: #eeeeee;
+    background: #eee;
     color: #292929;
-    border-color: #eeeeee;
 }
 
-@media(max-width:800px) {
+@media (max-width: 800px) {
     .nav {
         padding: 0 20px;
     }
@@ -328,17 +284,9 @@ header {
         gap: 15px;
     }
 
-    .nav_links a {
-        font-size: 14px;
-    }
-
-    .home h2 {
-        font-size: 46px;
-    }
-
     .abt {
         grid-template-columns: 1fr;
-        gap: 50px;
+        gap: 40px;
     }
 
     .abt_img {
@@ -347,31 +295,21 @@ header {
         margin: auto;
     }
 
-    .abt_text {
-        max-width: 600px;
-    }
-
     .pjt_list {
         grid-template-columns: 1fr;
     }
 
-    .pjt:nth-child(2),
-    .pjt:nth-child(3) {
-        transform: none;
-    }
-
     .interest_list {
         grid-template-columns: 1fr;
-        gap: 35px;
     }
 }
 
-@media(max-width:550px) {
+@media (max-width: 550px) {
     .nav {
         height: auto;
-        padding: 18px 20px;
+        padding: 18px;
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
     }
 
     .nav_links {
@@ -379,13 +317,8 @@ header {
         justify-content: center;
     }
 
-    .home {
-        min-height: calc(100vh - 100px);
-        padding: 60px 20px;
-    }
-
     .home h2 {
-        font-size: 38px;
+        font-size: 40px;
     }
 
     .home_intro {
@@ -393,7 +326,7 @@ header {
     }
 
     .sec {
-        padding: 75px 22px;
+        padding: 70px 20px;
     }
 
     .abt_img {
@@ -404,10 +337,10 @@ header {
     .skl h2,
     .pjt_sec h2,
     .interest_sec h2 {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .contact h2 {
-        font-size: 40px;
+        font-size: 38px;
     }
 }
